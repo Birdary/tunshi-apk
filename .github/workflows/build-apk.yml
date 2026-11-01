@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
@@ -44,16 +44,6 @@ jobs:
           bash tools/setup.sh 2>&1 | tee setup.log
           echo "setup_exit=$?" >> setup.log
 
-      - name: Prune ruby bundled-gem exts
-        if: steps.setup.outcome == 'success'
-        run: |
-          cd app/jni/ruby/ext
-          keep="socket digest json openssl psych pty pathname monitor nkf objspace ripper io"
-          mkdir -p /tmp/keepext
-          for k in $keep; do [ -d "$k" ] && cp -r "$k" /tmp/keepext/; done
-          find . -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
-          cp -r /tmp/keepext/. .
-          echo "kept:"; ls | tr '\n' ' '; echo
       - name: Build APK (arm64-v8a, strip audio)
         id: build
         if: steps.setup.outcome == 'success'
@@ -95,6 +85,7 @@ jobs:
           name: tunshi-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
 
 
 
