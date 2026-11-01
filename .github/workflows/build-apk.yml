@@ -5,33 +5,61 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: true
 
-      # 从 Windows 提交时可能丢失可执行位，这里统一补上
       - name: Fix permissions
         run: chmod +x gradlew tools/*.sh app/jni/*.sh app/jni/mkxp-z/*.sh || true
 
+      - name: Env info
+        run: |
+          echo "cpu: $(nproc)"; free -m | head -2; df -h / | tail -1
+          lsb_release -a || cat /etc/os-release
+
       - name: Install build environment
-        run: bash tools/setup.sh
+        id: setup
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          bash tools/setup.sh 2>&1 | tee setup.log
 
       - name: Build APK (arm64-v8a, strip audio)
-        run: bash tools/build.sh ./game --strip-audio
-
-      - name: Collect APK
+        id: build
+        if: steps.setup.outcome == 'success'
+        continue-on-error: true
         run: |
-          mkdir -p out
-          cp app/build/outputs/apk/debug/*.apk out/ || true
-          ls -la out
+          set -o pipefail
+          bash tools/build.sh ./game --strip-audio 2>&1 | tee build.log
 
-      - uses: actions/upload-artifact@v4
+      - name: Save logs to repo
+        if: always()
+        run: |
+          {
+            echo "setup=${{ steps.setup.outcome }}"
+            echo "build=${{ steps.build.outcome }}"
+            echo "----- setup.log (tail) -----"
+            tail -n 250 setup.log 2>/dev/null || echo "(no setup.log)"
+            echo "----- build.log (tail) -----"
+            tail -n 250 build.log 2>/dev/null || echo "(no build.log)"
+          } > build-log.txt
+          git config user.name "ci"
+          git config user.email "ci@local"
+          git add build-log.txt
+          git commit -m "ci log [skip ci]" || true
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
+
+      - name: Upload APK
+        if: steps.build.outcome == 'success'
+        uses: actions/upload-artifact@v4
         with:
           name: tunshi-apk
-          path: out/*.apk
+          path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
