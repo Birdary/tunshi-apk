@@ -1,4 +1,4 @@
-﻿name: Build Tunshi APK
+name: Build Tunshi APK
 
 on:
   workflow_dispatch:
@@ -43,6 +43,12 @@ jobs:
           set -o pipefail
           bash tools/setup.sh 2>&1 | tee setup.log
           echo "setup_exit=$?" >> setup.log
+
+      - name: Prune ruby bundled-gem exts
+        if: steps.setup.outcome == 'success'
+        run: |
+          rm -rf app/jni/ruby/ext/cgi app/jni/ruby/ext/bigdecimal || true
+          echo "ext dirs:"; ls app/jni/ruby/ext | tr '\n' ' '; echo
 
       - name: Build APK (arm64-v8a, strip audio)
         id: build
