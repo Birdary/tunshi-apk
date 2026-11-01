@@ -1,4 +1,4 @@
-name: Build Tunshi APK
+﻿name: Build Tunshi APK
 
 on:
   workflow_dispatch:
@@ -47,7 +47,7 @@ jobs:
       - name: Prune ruby bundled-gem exts
         if: steps.setup.outcome == 'success'
         run: |
-          rm -rf app/jni/ruby/ext/cgi app/jni/ruby/ext/bigdecimal || true
+          rm -rf app/jni/ruby/ext/cgi app/jni/ruby/ext/bigdecimal app/jni/ruby/ext/continuation || true
           echo "ext dirs:"; ls app/jni/ruby/ext | tr '\n' ' '; echo
 
       - name: Build APK (arm64-v8a, strip audio)
@@ -91,4 +91,5 @@ jobs:
           name: tunshi-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
 
