@@ -128,7 +128,7 @@ RUBY_CONFIGURE_ARGS := \
 	--disable-install-doc \
 	--disable-rubygems \
 	--with-static-linked-ext \
-	--with-out-ext=readline,dbm,gdbm,win32,win32ole,fiddle \
+	--with-out-ext=readline,dbm,gdbm,win32,win32ole,fiddle,bigdecimal \
 	--without-gmp
 
 CONFIGURE := $(CONFIGURE_ENV) ./configure $(CONFIGURE_ARGS)
