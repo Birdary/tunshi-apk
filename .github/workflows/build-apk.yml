@@ -1,4 +1,4 @@
-name: Build Tunshi APK
+﻿name: Build Tunshi APK
 
 on:
   workflow_dispatch:
@@ -45,9 +45,9 @@ jobs:
             echo "setup=${{ steps.setup.outcome }}"
             echo "build=${{ steps.build.outcome }}"
             echo "----- setup.log (tail) -----"
-            tail -n 250 setup.log 2>/dev/null || echo "(no setup.log)"
+            tail -n 400 setup.log 2>/dev/null || echo "(no setup.log)"
             echo "----- build.log (tail) -----"
-            tail -n 250 build.log 2>/dev/null || echo "(no build.log)"
+            tail -n 400 build.log 2>/dev/null || echo "(no build.log)"
           } > build-log.txt
           git config user.name "ci"
           git config user.email "ci@local"
@@ -63,3 +63,4 @@ jobs:
           name: tunshi-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+

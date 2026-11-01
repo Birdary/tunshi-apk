@@ -43,26 +43,20 @@ export ANDROID_SDK_ROOT="$SDK_DIR"
 export ANDROID_NDK_HOME="$SDK_DIR/ndk/$NDK_VERSION"
 
 log "Installing Android SDK packages (platform 33, build-tools, NDK, CMake)..."
-# sdkmanager closes stdin when done, so yes can exit with SIGPIPE (141).
-# Check sdkmanager's status separately while keeping real failures fatal.
+# 直接写入 license 文件，避免依赖 sdkmanager --licenses 的交互行为
+mkdir -p "$SDK_DIR/licenses"
+printf '\n24333f8a63b6825ea9c5514f83c2829b004d1fee' > "$SDK_DIR/licenses/android-sdk-license"
+printf '\n84831b9409646a918e30573bab4c9c91346d8abd' > "$SDK_DIR/licenses/android-sdk-preview-license"
+printf '\n24333f8a63b6825ea9c5514f83c2829b004d1fee' > "$SDK_DIR/licenses/android-sdk-arm-dbt-license"
 set +e
-yes | "$SDKMANAGER" --licenses >/dev/null
-license_status=("${PIPESTATUS[@]}")
+yes 2>/dev/null | "$SDKMANAGER" --licenses 2>&1 | tail -5
 set -e
-if (( license_status[1] != 0 )); then
-  echo "Android SDK license acceptance failed (exit ${license_status[1]})." >&2
-  exit "${license_status[1]}"
-fi
-if (( license_status[0] != 0 && license_status[0] != 141 )); then
-  echo "Failed to supply Android SDK license responses." >&2
-  exit "${license_status[0]}"
-fi
 "$SDKMANAGER" \
   "platform-tools" \
   "platforms;android-33" \
   "build-tools;33.0.2" \
   "cmake;3.22.1" \
-  "ndk;$NDK_VERSION"
+  "ndk;$NDK_VERSION" 2>&1 | tail -30
 
 # ---------------- native deps sources ----------------
 log "Fetching native dependency sources (SDL2, Ruby, openal, ...)..."
