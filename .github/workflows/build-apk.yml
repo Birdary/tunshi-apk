@@ -30,12 +30,19 @@ jobs:
         run: |
           echo "cpu: $(nproc)"; free -m | head -2; df -h / | tail -1
 
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost || true
+          sudo docker image prune -af || true
+          df -h / | tail -1
+
       - name: Install build environment
         id: setup
         continue-on-error: true
         run: |
           set -o pipefail
           bash tools/setup.sh 2>&1 | tee setup.log
+          echo "setup_exit=$?" >> setup.log
 
       - name: Build APK (arm64-v8a, strip audio)
         id: build
@@ -44,6 +51,9 @@ jobs:
         run: |
           set -o pipefail
           bash tools/build.sh ./game --strip-audio 2>&1 | tee build.log
+          echo "build_exit=$?" >> build.log
+          df -h / | tail -1 >> build.log
+          free -m | head -2 >> build.log
 
       - name: Save logs to repo
         if: always()
@@ -52,17 +62,14 @@ jobs:
             echo "setup=${{ steps.setup.outcome }}"
             echo "build=${{ steps.build.outcome }}"
             echo
-            echo "===== errors (setup) ====="
-            grep -n -iE "error|fatal|cannot|No such file|undefined reference|Failed" setup.log 2>/dev/null | tail -n 40 || echo "(none)"
-            echo
             echo "===== errors (build) ====="
-            grep -n -iE "error|fatal|cannot|No such file|undefined reference|Failed|\*\*\*" build.log 2>/dev/null | tail -n 60 || echo "(none)"
+            grep -n -iE "error:|Error [0-9]|No space left|Killed|undefined reference|\*\*\*" build.log 2>/dev/null | tail -n 50 || echo "(none)"
             echo
-            echo "===== build.log tail 200 ====="
-            tail -n 200 build.log 2>/dev/null || echo "(no build.log)"
+            echo "===== build.log last 60 lines ====="
+            tail -n 60 build.log 2>/dev/null || echo "(no build.log)"
             echo
-            echo "===== setup.log tail 60 ====="
-            tail -n 60 setup.log 2>/dev/null || echo "(no setup.log)"
+            echo "===== setup.log last 30 lines ====="
+            tail -n 30 setup.log 2>/dev/null || echo "(no setup.log)"
           } > build-log.txt
           git config user.name "ci"
           git config user.email "ci@local"
