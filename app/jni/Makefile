@@ -1,4 +1,4 @@
-NDK       := ${ANDROID_NDK_HOME}
+﻿NDK       := ${ANDROID_NDK_HOME}
 TOOLCHAIN := $(NDK)/toolchains/llvm/prebuilt/${ARCH}
 NPROC     := $(shell nproc)
 
@@ -128,7 +128,7 @@ RUBY_CONFIGURE_ARGS := \
 	--disable-install-doc \
 	--disable-rubygems \
 	--with-static-linked-ext \
-	--with-out-ext=readline,dbm,gdbm,win32,win32ole,fiddle,bigdecimal \
+	--with-out-ext=readline,dbm,gdbm,win32,win32ole,fiddle,bigdecimal,cgi,date,stringio,strscan \
 	--without-gmp
 
 CONFIGURE := $(CONFIGURE_ENV) ./configure $(CONFIGURE_ARGS)
@@ -229,3 +229,4 @@ clean-ruby:
 clean: clean-pixman clean-iconv clean-openal clean-openssl clean-ruby
 
 all: pixman iconv openal openssl ruby
+
