@@ -1,5 +1,5 @@
-setup=failure
-build=skipped
+setup=success
+build=failure
 ----- setup.log (tail) -----
 
 ==> Installing apt dependencies...
@@ -186,7 +186,469 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 ==> Installing Android SDK packages (platform 33, build-tools, NDK, CMake)...
-yes: standard output: Broken pipe
-Failed to supply Android SDK license responses.
+
+10.8 Open Source Software. In the event Open Source software is included with Evaluation Software, such Open Source software is licensed pursuant to the applicable Open Source software license agreement identified in the Open Source software comments in the applicable source code file(s) and/or file header as indicated in the Evaluation Software. Additional detail may be available (where applicable) in the accompanying on-line documentation. With respect to the Open Source software, nothing in this Agreement limits any rights under, or grants rights that supersede, the terms of any applicable Open Source software license agreement.
+---------------------------------------
+Accept? (y/N): All SDK package licenses accepted
+
+Loading package information...                                                  Loading local repository...                                                     [                                       ] 3% Loading local repository...        [                                       ] 3% Fetch remote repository...         [=                                      ] 3% Fetch remote repository...         [=                                      ] 4% Fetch remote repository...         [=                                      ] 5% Fetch remote repository...         [==                                     ] 5% Fetch remote repository...         [==                                     ] 6% Fetch remote repository...         [==                                     ] 7% Fetch remote repository...         [==                                     ] 7% Computing updates...               [===                                    ] 8% Computing updates...               [===                                    ] 10% Computing updates...              [===                                    ] 10% Installing NDK (Side by side) 23.2[===                                    ] 10% Downloading android-ndk-r23c-linux[====                                   ] 10% Downloading android-ndk-r23c-linux[====                                   ] 11% Downloading android-ndk-r23c-linux[====                                   ] 12% Downloading android-ndk-r23c-linux[=====                                  ] 13% Downloading android-ndk-r23c-linux[=====                                  ] 14% Downloading android-ndk-r23c-linux[=====                                  ] 15% Downloading android-ndk-r23c-linux[======                                 ] 15% Downloading android-ndk-r23c-linux[======                                 ] 16% Downloading android-ndk-r23c-linux[======                                 ] 16% Unzipping...                      [======                                 ] 16% Unzipping... android-ndk-r23c/    [======                                 ] 16% Unzipping... android-ndk-r23c/CHAN[======                                 ] 16% Unzipping... android-ndk-r23c/wrap[======                                 ] 16% Unzipping... android-ndk-r23c/preb[======                                 ] 16% Unzipping... android-ndk-r23c/buil[======                                 ] 16% Unzipping... android-ndk-r23c/NOTI[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/NOTI[======                                 ] 16% Unzipping... android-ndk-r23c/meta[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/pyth[======                                 ] 16% Unzipping... android-ndk-r23c/sour[======                                 ] 16% Unzipping... android-ndk-r23c/simp[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/READ[======                                 ] 16% Unzipping... android-ndk-r23c/tool[======                                 ] 17% Unzipping... android-ndk-r23c/tool[=======                                ] 18% Unzipping... android-ndk-r23c/tool[=======                                ] 19% Unzipping... android-ndk-r23c/tool[=======                                ] 20% Unzipping... android-ndk-r23c/tool[========                               ] 20% Unzipping... android-ndk-r23c/tool[========                               ] 21% Unzipping... android-ndk-r23c/tool[========                               ] 21% Unzipping... android-ndk-r23c/ndk-[========                               ] 21% Unzipping... android-ndk-r23c/shad[============                           ] 33% Unzipping... android-ndk-r23c/shad[============                           ] 33% Installing CMake 3.22.1 android-nd[============                           ] 33% Downloading cmake-3.22.1-linux.zip[=============                          ] 33% Downloading cmake-3.22.1-linux.zip[=============                          ] 34% Downloading cmake-3.22.1-linux.zip[=============                          ] 35% Downloading cmake-3.22.1-linux.zip[==============                         ] 35% Downloading cmake-3.22.1-linux.zip[==============                         ] 36% Downloading cmake-3.22.1-linux.zip[==============                         ] 37% Downloading cmake-3.22.1-linux.zip[===============                        ] 38% Downloading cmake-3.22.1-linux.zip[===============                        ] 38% Unzipping... android-ndk-r23c/shad[===============                        ] 38% Unzipping... bin/cmake            [===============                        ] 39% Unzipping... bin/cmake            [===============                        ] 40% Unzipping... bin/cmake            [===============                        ] 40% Unzipping... bin/ctest            [================                       ] 40% Unzipping... bin/ctest            [================                       ] 41% Unzipping... bin/ctest            [================                       ] 41% Unzipping... bin/cpack            [================                       ] 42% Unzipping... bin/cpack            [=================                      ] 43% Unzipping... bin/cpack            [=================                      ] 43% Unzipping... share/vim/vimfiles/in[=================                      ] 43% Unzipping... share/vim/vimfiles/sy[=================                      ] 43% Unzipping... share/aclocal/cmake.m[=================                      ] 43% Unzipping... share/emacs/site-lisp[=================                      ] 43% Unzipping... share/cmake-3.22/incl[=================                      ] 43% Unzipping... share/cmake-3.22/Help[=================                      ] 43% Unzipping... share/cmake-3.22/Temp[=================                      ] 43% Unzipping... share/cmake-3.22/Modu[=================                      ] 44% Unzipping... share/cmake-3.22/Modu[=================                      ] 44% Unzipping... share/bash-completion[=================                      ] 44% Unzipping... doc/cmake-3.22/Copyri[=================                      ] 44% Unzipping... doc/cmake-3.22/cmzlib[=================                      ] 44% Unzipping... doc/cmake-3.22/cmzstd[=================                      ] 44% Unzipping... doc/cmake-3.22/cmnght[=================                      ] 44% Unzipping... doc/cmake-3.22/cmsys/[=================                      ] 44% Unzipping... doc/cmake-3.22/cmcurl[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibr[=================                      ] 44% Unzipping... doc/cmake-3.22/cmliba[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibl[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibu[=================                      ] 44% Unzipping... doc/openssl-1.1.1l/LI[=================                      ] 44% Unzipping... source.properties    [=================                      ] 44% Unzipping... bin/ninja            [=================                      ] 44% Unzipping... doc/ninja/LICENSE    [=================                      ] 44% Unzipping... share/cmake-3.22/Modu[=====================                  ] 55% Unzipping... share/cmake-3.22/Modu[=====================                  ] 55% Installing Android SDK Build-Tools[=====================                  ] 55% Downloading build-tools_r33.0.2-li[======================                 ] 55% Downloading build-tools_r33.0.2-li[======================                 ] 56% Downloading build-tools_r33.0.2-li[======================                 ] 57% Downloading build-tools_r33.0.2-li[=======================                ] 58% Downloading build-tools_r33.0.2-li[=======================                ] 59% Downloading build-tools_r33.0.2-li[=======================                ] 60% Downloading build-tools_r33.0.2-li[========================               ] 60% Downloading build-tools_r33.0.2-li[========================               ] 61% Downloading build-tools_r33.0.2-li[========================               ] 61% Unzipping... share/cmake-3.22/Modu[========================               ] 61% Unzipping... android-13/NOTICE.txt[========================               ] 61% Unzipping... android-13/aapt      [========================               ] 61% Unzipping... android-13/aapt2     [========================               ] 61% Unzipping... android-13/aarch64-li[========================               ] 61% Unzipping... android-13/aidl      [========================               ] 61% Unzipping... android-13/apksigner [========================               ] 61% Unzipping... android-13/arm-linux-[========================               ] 61% Unzipping... android-13/bcc_compat[========================               ] 61% Unzipping... android-13/core-lambd[========================               ] 61% Unzipping... android-13/d8        [========================               ] 61% Unzipping... android-13/dexdump   [========================               ] 61% Unzipping... android-13/i686-linux[========================               ] 61% Unzipping... android-13/lld       [========================               ] 61% Unzipping... android-13/llvm-rs-cc[========================               ] 61% Unzipping... android-13/mipsel-lin[========================               ] 61% Unzipping... android-13/runtime.pr[========================               ] 61% Unzipping... android-13/source.pro[========================               ] 61% Unzipping... android-13/split-sele[========================               ] 61% Unzipping... android-13/x86_64-lin[========================               ] 61% Unzipping... android-13/zipalign  [========================               ] 61% Unzipping... android-13/lib/apksig[========================               ] 61% Unzipping... android-13/lib/d8.jar[========================               ] 62% Unzipping... android-13/lib/d8.jar[========================               ] 62% Unzipping... android-13/lib64/libL[=========================              ] 63% Unzipping... android-13/lib64/libL[=========================              ] 63% Unzipping... android-13/lib64/libb[=========================              ] 63% Unzipping... android-13/lib64/libc[=========================              ] 64% Unzipping... android-13/lib64/libc[=========================              ] 64% Unzipping... android-13/lld-bin/ll[=========================              ] 65% Unzipping... android-13/lld-bin/ll[==========================             ] 65% Unzipping... android-13/lld-bin/ll[==========================             ] 65% Unzipping... android-13/renderscri[==========================             ] 66% Unzipping... android-13/renderscri[==============================         ] 78% Unzipping... android-13/renderscri[==============================         ] 78% Installing Android SDK Platform 33[==============================         ] 78% Downloading platform-33-ext3_r03.z[===============================        ] 78% Downloading platform-33-ext3_r03.z[===============================        ] 79% Downloading platform-33-ext3_r03.z[===============================        ] 80% Downloading platform-33-ext3_r03.z[================================       ] 80% Downloading platform-33-ext3_r03.z[================================       ] 81% Downloading platform-33-ext3_r03.z[================================       ] 82% Downloading platform-33-ext3_r03.z[=================================      ] 83% Downloading platform-33-ext3_r03.z[=================================      ] 83% Unzipping... android-13/renderscri[=================================      ] 83% Unzipping... android-13/          [=================================      ] 83% Unzipping... android-13/android.ja[=================================      ] 84% Unzipping... android-13/android.ja[=================================      ] 85% Unzipping... android-13/android.ja[==================================     ] 85% Unzipping... android-13/android.ja[==================================     ] 85% Unzipping... android-13/optional/ [==================================     ] 85% Unzipping... android-13/optional/a[==================================     ] 85% Unzipping... android-13/optional/l[==================================     ] 85% Unzipping... android-13/optional/o[==================================     ] 85% Unzipping... android-13/optional/a[==================================     ] 85% Unzipping... android-13/optional/o[==================================     ] 85% Unzipping... android-13/templates/[==================================     ] 85% Unzipping... android-13/core-for-s[==================================     ] 85% Unzipping... android-13/build.prop[==================================     ] 85% Unzipping... android-13/android-st[==================================     ] 86% Unzipping... android-13/android-st[==================================     ] 86% Unzipping... android-13/uiautomato[==================================     ] 86% Unzipping... android-13/source.pro[==================================     ] 86% Unzipping... android-13/data/     [==================================     ] 86% Unzipping... android-13/data/servi[==================================     ] 86% Unzipping... android-13/data/NOTIC[==================================     ] 86% Unzipping... android-13/data/widge[==================================     ] 86% Unzipping... android-13/data/broad[==================================     ] 86% Unzipping... android-13/data/api-v[==================================     ] 86% Unzipping... android-13/data/featu[==================================     ] 86% Unzipping... android-13/data/annot[==================================     ] 86% Unzipping... android-13/data/res/ [==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/m[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/a[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/a[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/c[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/t[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/c[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/x[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/c[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/i[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/x[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/a[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/x[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/a[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/i[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/c[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/categ[===================================    ] 88% Unzipping... android-13/data/activ[===================================    ] 88% Unzipping... android-13/sdk.proper[===================================    ] 88% Unzipping... android-13/skins/    [===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/skins/WQVG[===================================    ] 88% Unzipping... android-13/skins/NOTI[===================================    ] 88% Unzipping... android-13/skins/HVGA[===================================    ] 88% Unzipping... android-13/skins/WVGA[===================================    ] 88% Unzipping... android-13/skins/WQVG[===================================    ] 88% Unzipping... android-13/skins/WVGA[===================================    ] 88% Unzipping... android-13/skins/QVGA[===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/skins/WSVG[===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/framework.[===================================    ] 89% Unzipping... android-13/framework.[=======================================] 100% Unzipping... android-13/framework
+
+
+==> Fetching native dependency sources (SDL2, Ruby, openal, ...)...
+Downloading libogg...
+warning: refs/tags/v1.3.5 65b355cc20171010ecabf245e7b339aeab8ddbb9 is not a commit!
+Downloading libvorbis...
+warning: refs/tags/v1.3.7 0c55fa38933fd4bdb7db7c298b27e7bf2f2c5e98 is not a commit!
+Downloading libtheora...
+Downloading libiconv...
+Downloading uchardet...
+warning: refs/tags/v0.0.8 3ac6d310b4592afd5e1f0da578216495d96ce735 is not a commit!
+Downloading Pixman...
+warning: refs/tags/pixman-0.42.2 a474ce42c62bafac7e1e61e0dd5f01999839b72d is not a commit!
+Downloading PhysicsFS...
+Downloading OpenAL Soft...
+Downloading SDL2...
+Downloading SDL2_image...
+Downloading SDL2_ttf...
+Downloading SDL2_sound...
+Downloading OpenSSL...
+warning: refs/tags/OpenSSL_1_1_1t e6c2dd14bafd6cbfdf89bc23db7c4bb72c0fb784 is not a commit!
+Downloading Ruby...
+Done!
+
+==> Embedding engine assets/shaders...
+Generating assets/gamecontrollerdb.txt.xxd
+Generating assets/icon.png.xxd
+Generating assets/liberation.ttf.xxd
+Generating assets/wqymicrohei.ttf.xxd
+Generating shader/bitmapBlit.frag.xxd
+Generating shader/blur.frag.xxd
+Generating shader/blurH.vert.xxd
+Generating shader/blurV.vert.xxd
+Generating shader/common.h.xxd
+Generating shader/flashMap.frag.xxd
+Generating shader/flatColor.frag.xxd
+Generating shader/gray.frag.xxd
+Generating shader/hue.frag.xxd
+Generating shader/minimal.vert.xxd
+Generating shader/plane.frag.xxd
+Generating shader/simple.frag.xxd
+Generating shader/simple.vert.xxd
+Generating shader/simpleAlpha.frag.xxd
+Generating shader/simpleAlphaUni.frag.xxd
+Generating shader/simpleColor.frag.xxd
+Generating shader/simpleColor.vert.xxd
+Generating shader/simpleMatrix.vert.xxd
+Generating shader/sprite.frag.xxd
+Generating shader/sprite.vert.xxd
+Generating shader/tilemap.frag.xxd
+Generating shader/tilemap.vert.xxd
+Generating shader/tilemapvx.vert.xxd
+Generating shader/trans.frag.xxd
+Generating shader/transSimple.frag.xxd
+
+==> Writing tools/env.sh...
+
+Setup complete. Build a game APK with:
+  ./tools/build.sh /path/to/your/game_folder_or_archive
 ----- build.log (tail) -----
-(no build.log)
+**********************************************************************
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... no, consider installing GNU libiconv
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... no
+checking for iconv... (cached) no, consider installing GNU libiconv
+checking for GNU gettext in libintl... no
+checking whether to use NLS... no
+checking for mbstate_t... yes
+checking for wchar_t... yes
+checking for getc_unlocked... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking for mbsinit... yes
+checking for setlocale... yes
+checking whether <wchar.h> is standalone... yes
+checking for memmove... libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+yes
+checking for nl_langinfo and CODESET... no
+checking for symlink... yes
+checking for canonicalize_file_name... libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+no
+checking for faccessat... yes
+checking for realpath... yes
+checking for lstat... yes
+checking for readlinkat... yes
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for getdtablesize... no
+checking for getprogname... yes
+checking for getexecname... no
+checking for readlink... yes
+checking for setenv... yes
+checking for working fcntl.h... cross-compiling
+checking for wchar.h... (cached) yes
+checking for EILSEQ... yes
+checking whether byte ordering is bigendian... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether lstat correctly handles trailing slash... guessing yes
+checking whether // is distinct from /... unknown, assuming no
+checking whether realpath works... configure.ac:75: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:75: You should run autoupdate.
+aclocal.m4:122: AC_PROG_LIBTOOL is expanded from...
+configure.ac:75: the top level
+configure.ac:303: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:303: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:303: the top level
+configure.ac:382: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:382: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:382: the top level
+configure.ac:440: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:440: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:440: the top level
+configure.ac:485: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:485: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:485: the top level
+configure.ac:570: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:570: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:570: the top level
+configure.ac:613: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:613: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:613: the top level
+configure.ac:654: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:654: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:654: the top level
+configure.ac:688: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:688: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:688: the top level
+configure.ac:711: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:711: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:711: the top level
+configure.ac:716: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:716: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:716: the top level
+configure.ac:795: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:795: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:795: the top level
+configure.ac:827: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:827: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:827: the top level
+configure.ac:850: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:850: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:850: the top level
+configure.ac:864: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:864: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:864: the top level
+configure.ac:877: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:877: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:877: the top level
+configure.ac:890: warning: The macro 'AC_HELP_STRING' is obsolete.
+configure.ac:890: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+./lib/autoconf/general.m4:1534: AC_ARG_ENABLE is expanded from...
+configure.ac:890: the top level
+configure.ac:981: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:981: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+configure.ac:981: the top level
+configure.ac:1170: warning: AC_OUTPUT should be used without arguments.
+configure.ac:1170: You should run autoupdate.
+guessing no
+checking for getcwd... yes
+checking for C/C++ restrict keyword... __restrict__
+checking if environ is properly declared... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for complete errno.h... yes
+checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang options needed to detect all undeclared functions... -fno-builtin
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether ctype.h defines __header_inline... no
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether getdtablesize is declared... no
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... no
+checking for wint_t... yes
+checking whether wint_t is large enough... configure.ac:73: installing './compile'
+configure.ac:69: installing './config.guess'
+configure.ac:69: installing './config.sub'
+configure.ac:62: installing './install-sh'
+yes
+checking whether the compiler produces multi-arch binaries... configure.ac:62: installing './missing'
+no
+checking whether stdint.h conforms to C99... no
+checking for sys/inttypes.h... demos/Makefile.am:17: warning: source file '../test/utils.c' is in a subdirectory,
+demos/Makefile.am:17: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least one source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However, this
+automake: behavior may change in a future Automake major version, with object
+automake: files being placed in the same subdirectory as the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibility.
+demos/Makefile.am:17: warning: source file '../test/utils-prng.c' is in a subdirectory,
+demos/Makefile.am:17: but option 'subdir-objects' is disabled
+no
+checking for sys/bitypes.h... demos/Makefile.am: installing './depcomp'
+no
+checking for bit size of ptrdiff_t... parallel-tests: installing './test-driver'
+64
+checking for bit size of size_t... 64
+checking for bit size of sig_atomic_t... 32
+checking for bit size of wchar_t... 32
+checking for bit size of wint_t... 32
+checking whether sig_atomic_t is signed... yes
+checking whether wchar_t is signed... no
+checking whether wint_t is signed... no
+checking for ptrdiff_t integer literal suffix... l
+checking for size_t integer literal suffix... ul
+checking for sig_atomic_t integer literal suffix... 
+checking for wchar_t integer literal suffix... u
+checking for wint_t integer literal suffix... u
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, realloc, calloc set errno on failure... yes
+checking whether malloc (0) returns nonnull... guessing no
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for sigset_t... yes
+checking for SIGPIPE... yes
+checking whether setenv is declared... yes
+checking for ssize_t... yes
+checking for uid_t in sys/types.h... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking whether fcloseall is declared... no
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... no
+checking whether fcvt is declared... no
+checking whether gcvt is declared... no
+checking whether strerror(0) succeeds... guessing no
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... no
+checking whether fgets_unlocked is declared... no
+checking whether fputc_unlocked is declared... no
+checking whether fputs_unlocked is declared... no
+checking whether fread_unlocked is declared... no
+checking whether fwrite_unlocked is declared... no
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking whether wcsdup is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for __builtin_expect... yes
+checking whether // is distinct from /... (cached) unknown, assuming no
+checking whether dup2 works... guessing no
+checking for setdtablesize... no
+checking for error_at_line... yes
+checking whether fcntl handles F_DUPFD correctly... guessing yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... guessing no
+checking whether free is known to preserve errno... no
+checking whether program_invocation_name is declared... no
+checking whether program_invocation_short_name is declared... no
+checking whether __argv is declared... no
+checking whether __progname is defined in default libraries... yes
+checking whether the -Werror option is usable... (cached) yes
+checking for simple visibility declarations... (cached) yes
+checking whether the compiler supports the __inline keyword... yes
+checking for mbstate_t... (cached) yes
+checking for mempcpy... yes
+checking whether open recognizes a trailing slash... guessing yes
+checking whether program_invocation_name is declared... (cached) no
+checking whether program_invocation_short_name is declared... (cached) no
+checking for raise... yes
+checking for sigprocmask... yes
+checking for rawmemchr... no
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... guessing yes
+checking whether readlink truncates results correctly... guessing yes
+checking for getcwd... (cached) yes
+checking whether free is known to preserve errno... (cached) no
+checking for mempcpy... (cached) yes
+checking for rawmemchr... (cached) no
+checking for search.h... yes
+checking for tsearch... yes
+checking for sigprocmask... (cached) yes
+checking for ssize_t... (cached) yes
+checking whether stat handles trailing slashes on files... guessing yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for working stdalign.h... yes
+checking for variable-length arrays... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating srclib/Makefile
+config.status: creating src/Makefile
+config.status: creating po/Makefile.in
+config.status: creating man/Makefile
+config.status: creating tests/Makefile
+config.status: creating include/iconv.h
+config.status: creating include/iconv.h.inst
+config.status: creating config.h
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in libcharset (/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/libiconv/libcharset)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a'  '--host=aarch64-linux-android' 'ac_cv_header_pwd_h=no' 'ac_cv_header_langinfo_h=no' '--enable-static=true' '--enable-shared=false' 'host_alias=aarch64-linux-android' 'CC=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang' 'CFLAGS=-O0 -D__ARM_ARCH_8A__ -D__aarch64__ -march=armv8-a -mtune=cortex-a53 --sysroot=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/include' 'LDFLAGS=-L/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib -lm -lz' --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for aarch64-linux-android-gcc... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang accepts -g... yes
+checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang option to enable C11 features... none needed
+checking how to run the C preprocessor... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-android
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+checking if the linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm
+checking the name lister (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to aarch64-unknown-linux-android format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld option to reload object files... -r
+checking for aarch64-linux-android-file... no
+checking for file... file
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-linux-android-objdump... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump
+checking how to recognize dependent libraries... pass_all
+checking for aarch64-linux-android-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for aarch64-linux-android-ar... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+checking for archiver @FILE support... @
+checking for aarch64-linux-android-strip... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip
+checking for aarch64-linux-android-ranlib... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+checking for gawk... gawk
+checking command to parse /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm output from /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for aarch64-linux-android-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -fno-rtti -fno-exceptions... yes
+checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang option to produce PIC... -fPIC -DPIC
+checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang PIC flag -fPIC -DPIC works... yes
+checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang static flag -static works... yes
+checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -c -o file.o... yes
+checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -c -o file.o... (cached) yes
+checking whether the /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... Android linker
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for ld... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
+checking if the linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
+checking for shared library path variable... LD_LIBRARY_PATH
+checking whether to activate relocatable installation... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for nl_langinfo and CODESET... no
+checking for symlink... yes
+checking for working fcntl.h... cross-compiling
+checking for setlocale... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating include/libcharset.h
+config.status: creating include/libcharset.h.inst
+config.status: creating include/localcharset.h
+config.status: creating include/localcharset.h.inst
+config.status: creating config.h
+config.status: executing libtool commands
