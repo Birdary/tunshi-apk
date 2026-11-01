@@ -4,251 +4,268 @@ build=failure
 ===== errors (setup) =====
 
 ===== errors (build) =====
-5:make[1]: *** No rule to make target 'clean'.  Stop.
-7:rm: cannot remove 'Makefile': No such file or directory
-8:rm: cannot remove 'configure': No such file or directory
-9:make: [Makefile:214: clean-pixman] Error 1 (ignored)
-12:make[1]: *** No rule to make target 'clean'.  Stop.
-14:rm: cannot remove 'Makefile': No such file or directory
-15:make: [Makefile:217: clean-iconv] Error 1 (ignored)
-19:make[1]: *** No rule to make target 'clean'.  Stop.
-21:rm: cannot remove 'Makefile': No such file or directory
-22:make: [Makefile:223: clean-openssl] Error 1 (ignored)
-25:make[1]: *** No rule to make target 'clean'.  Stop.
-27:rm: cannot remove 'Makefile': No such file or directory
-28:rm: cannot remove 'configure': No such file or directory
-29:make: [Makefile:226: clean-ruby] Error 1 (ignored)
-30:/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang -c /usr/local/lib/android/sdk/ndk/23.2.8568313/sources/android/cpufeatures/cpu-features.c -o /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/cpu-features.o -Wall -Wextra -Werror
-38:CMake Error at CMakeLists.txt:3 (cmake_minimum_required):
-48:-- Configuring incomplete, errors occurred!
-49:make: *** [Makefile:182: openal/cmakebuild/Makefile] Error 1
-50:make: *** Waiting for unfinished jobs....
-72:checking for compiler option needed when checking for declarations... -Werror=implicit-function-declaration
-163:**********************************************************************
-164:***                                                                ***
-165:***   OpenSSL has been successfully configured                     ***
-166:***                                                                ***
-167:***   If you encounter a problem while building, please open an    ***
-168:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
-169:***   and include the output from the following command:           ***
-170:***                                                                ***
-171:***       perl configdata.pm --dump                                ***
-172:***                                                                ***
-173:***   (If you are new to OpenSSL, you might want to consult the    ***
-174:***   'Troubleshooting' section in the INSTALL file first)         ***
-175:***                                                                ***
-176:**********************************************************************
-177:checking whether the -Werror option is usable... yes
-333:checking whether strerror_r is declared... yes
-334:checking whether strerror_r returns char *... yes
-404:checking whether strerror(0) succeeds... guessing no
-410:checking whether ferror_unlocked is declared... yes
-423:checking for C compiler option to allow warnings... -Wno-error
-428:checking for error_at_line... yes
-436:checking whether the -Werror option is usable... (cached) yes
-566:checking whether the -Werror option is usable... yes
+386:***                                                                ***
+387:***   If you encounter a problem while building, please open an    ***
+388:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+389:***   and include the output from the following command:           ***
+390:***                                                                ***
+391:***       perl configdata.pm --dump                                ***
+392:***                                                                ***
+393:***   (If you are new to OpenSSL, you might want to consult the    ***
+394:***   'Troubleshooting' section in the INSTALL file first)         ***
+395:***                                                                ***
+396:**********************************************************************
+429:checking 32-bit host C ABI... -- Performing Test HAVE_WNO_CXX20_ATTR_EXT - Failed
+554:checking for CFPreferencesCopyAppValue... -- Performing Test HAVE_MSSE2_SWITCH - Failed
+1421:checking whether strerror_r is declared... -- Installing library and headers
+1428:checking whether strerror_r returns char *... yes
+1726:[ 33%] Building CXX object CMakeFiles/OpenAL.dir/al/error.cpp.o
+1893:checking whether strerror(0) succeeds... guessing no
+1912:checking whether ferror_unlocked is declared... aarch64-linux-android23-clang  -I. -Iinclude -fPIC -pthread -Wa,--noexecstack -Qunused-arguments -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DOPENSSLDIR="\"/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a\"" -DENGINESDIR="\"/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/engines-1.1\"" -DNDEBUG -D__ANDROID_API__=23 -MMD -MF crypto/dsa/dsa_err.d.tmp -MT crypto/dsa/dsa_err.o -c -o crypto/dsa/dsa_err.o crypto/dsa/dsa_err.c
+1976:-Wno-error
+1990:checking for error_at_line... no
+2022:checking whether the -Werror option is usable... (cached) yes
+2460:checking whether the -Werror option is usable... aarch64-linux-android23-clang  -I. -Iinclude -fPIC -pthread -Wa,--noexecstack -Qunused-arguments -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DOPENSSLDIR="\"/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a\"" -DENGINESDIR="\"/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/engines-1.1\"" -DNDEBUG -D__ANDROID_API__=23 -MMD -MF crypto/seed/seed.d.tmp -MT crypto/seed/seed.o -c -o crypto/seed/seed.o crypto/seed/seed.c
+2774:checking whether the compiler supports -Werror... [100%] Built target OpenAL
+2962:checking for ERRORFUNC function attribute... aarch64-linux-android23-clang  -Iinclude -pie -pthread -Wa,--noexecstack -Qunused-arguments -Wno-macro-redefined -DNDEBUG -D__ANDROID_API__=23 -MMD -MF test/asynciotest.d.tmp -MT test/asynciotest.o -c -o test/asynciotest.o test/asynciotest.c
+3196:      -e 's/@''GNULIB_PERROR''@/0/g' \
+3262:      -e 's|@''REPLACE_PERROR''@|0|g' \
+3473:      -e 's/@''GNULIB_STRERROR''@/1/g' \
+3474:      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+3475:      -e 's/@''GNULIB_STRERRORNAME_NP''@/0/g' \
+3502:      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+3503:      -e 's|@''HAVE_STRERRORNAME_NP''@|1|g' \
+3521:      -e 's|@''REPLACE_STRERROR''@|1|g' \
+3522:      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+3523:      -e 's|@''REPLACE_STRERRORNAME_NP''@|0|g' \
+4006:/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -fvisibility=hidden -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -O0 -D__ARM_ARCH_8A__ -D__aarch64__ -march=armv8-a -mtune=cortex-a53 --sysroot=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/include -c -o libicrt_a-strerror.o `test -f 'strerror.c' || echo './'`strerror.c
+4007:/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang -DHAVE_CONFIG_H -DEXEEXT=\"\" -I. -I.. -I../lib  -DDEPENDS_ON_LIBICONV=1 -DDEPENDS_ON_LIBINTL=1  -fvisibility=hidden -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -O0 -D__ARM_ARCH_8A__ -D__aarch64__ -march=armv8-a -mtune=cortex-a53 --sysroot=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/include -c -o libicrt_a-strerror-override.o `test -f 'strerror-override.c' || echo './'`strerror-override.c
+4027:/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar cr libicrt.a libicrt_a-allocator.o libicrt_a-areadlink.o libicrt_a-basename-lgpl.o libicrt_a-binary-io.o libicrt_a-canonicalize-lgpl.o libicrt_a-careadlinkat.o libicrt_a-cloexec.o  libicrt_a-dup2.o  libicrt_a-fcntl.o libicrt_a-fd-hook.o libicrt_a-free.o  libicrt_a-getdtablesize.o libicrt_a-getprogname.o libicrt_a-malloca.o     libicrt_a-progname.o  libicrt_a-rawmemchr.o    libicrt_a-safe-read.o malloc/libicrt_a-scratch_buffer_dupfree.o malloc/libicrt_a-scratch_buffer_grow.o malloc/libicrt_a-scratch_buffer_grow_preserve.o malloc/libicrt_a-scratch_buffer_set_array_size.o   libicrt_a-stat-time.o   libicrt_a-strerror.o libicrt_a-strerror-override.o libicrt_a-unistd.o uniwidth/libicrt_a-width.o libicrt_a-xmalloc.o libicrt_a-xstrdup.o libicrt_a-xreadlink.o 
+4148:aarch64-linux-android23-clang  -Iinclude -pie -pthread -Wa,--noexecstack -Qunused-arguments -Wno-macro-redefined -DNDEBUG -D__ANDROID_API__=23 -MMD -MF test/fatalerrtest.d.tmp -MT test/fatalerrtest.o -c -o test/fatalerrtest.o test/fatalerrtest.c
+5416:rm -f test/fatalerrtest
+5419:	-o test/fatalerrtest test/fatalerrtest.o test/ssltestlib.o \
+5693:*** Installing runtime libraries
+5694:*** Installing development files
+5724:*** Installing engines
+5727:*** Installing runtime programs
+6021:checking for strerror...   CCLD     tolerance-test
+6416:generating known_errors.inc
+6417:known_errors.inc updated
+6446:compiling regerror.c
+6490:compiling error.c
+6683:configuring -test-/fatal
+6877:compiling dataerror.c
+6882:make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/-test-/fatal'
+6883:compiling rb_fatal.c
+6890:linking shared-object -test-/fatal/aarch64-linux-android.so
+6891:make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/-test-/fatal'
+7328:make[3]: *** No rule to make target 'ext/bigdecimal/bigdecimal.a', needed by 'libruby.so.3.1.0'.  Stop.
+7329:make[3]: *** Waiting for unfinished jobs....
+7331:make[2]: *** [exts.mk:148: ruby] Error 2
+7333:make[1]: *** [uncommon.mk:305: build-ext] Error 2
+7335:make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
 
 ===== build.log tail 200 =====
-checking whether malloc, realloc, calloc set errno on failure... yes
-checking whether malloc (0) returns nonnull... guessing no
-checking whether <limits.h> defines MIN and MAX... no
-checking whether <sys/param.h> defines MIN and MAX... yes
-checking for O_CLOEXEC... yes
-checking for promoted mode_t type... mode_t
-checking for sigset_t... yes
-checking for SIGPIPE... yes
-checking whether setenv is declared... yes
-checking for ssize_t... yes
-checking for uid_t in sys/types.h... yes
-checking for volatile sig_atomic_t... yes
-checking for sighandler_t... yes
-checking whether C symbols are prefixed with underscore at the linker level... no
-checking for stdbool.h that conforms to C99... yes
-checking for _Bool... yes
-checking for good max_align_t... yes
-checking whether NULL can be used in arbitrary expressions... yes
-checking whether fcloseall is declared... no
-checking which flavor of printf attribute matches inttypes macros... system
-checking whether ecvt is declared... no
-checking whether fcvt is declared... no
-checking whether gcvt is declared... no
-checking whether strerror(0) succeeds... guessing no
-checking for struct timespec in <time.h>... yes
-checking for TIME_UTC in <time.h>... yes
-checking whether execvpe is declared... yes
-checking whether clearerr_unlocked is declared... yes
-checking whether feof_unlocked is declared... yes
-checking whether ferror_unlocked is declared... yes
-checking whether fflush_unlocked is declared... no
-checking whether fgets_unlocked is declared... no
-checking whether fputc_unlocked is declared... no
-checking whether fputs_unlocked is declared... no
-checking whether fread_unlocked is declared... no
-checking whether fwrite_unlocked is declared... no
-checking whether getc_unlocked is declared... yes
-checking whether getchar_unlocked is declared... yes
-checking whether putc_unlocked is declared... yes
-checking whether putchar_unlocked is declared... yes
-checking whether <wchar.h> uses 'inline' correctly... yes
-checking whether wcsdup is declared... yes
-checking for C compiler option to allow warnings... -Wno-error
-checking for __builtin_expect... yes
-checking whether // is distinct from /... (cached) unknown, assuming no
-checking whether dup2 works... guessing no
-checking for setdtablesize... no
-checking for error_at_line... yes
-checking whether fcntl handles F_DUPFD correctly... guessing yes
-checking whether fcntl understands F_DUPFD_CLOEXEC... guessing no
-checking whether free is known to preserve errno... no
-checking whether program_invocation_name is declared... no
-checking whether program_invocation_short_name is declared... no
-checking whether __argv is declared... no
-checking whether __progname is defined in default libraries... yes
-checking whether the -Werror option is usable... (cached) yes
-checking for simple visibility declarations... (cached) yes
-checking whether the compiler supports the __inline keyword... yes
-checking for mbstate_t... (cached) yes
-checking for mempcpy... yes
-checking whether open recognizes a trailing slash... guessing yes
-checking whether program_invocation_name is declared... (cached) no
-checking whether program_invocation_short_name is declared... (cached) no
-checking for raise... yes
-checking for sigprocmask... yes
-checking for rawmemchr... no
-checking whether readlink signature is correct... yes
-checking whether readlink handles trailing slash correctly... guessing yes
-checking whether readlink truncates results correctly... guessing yes
-checking for getcwd... (cached) yes
-checking whether free is known to preserve errno... (cached) no
-checking for mempcpy... (cached) yes
-checking for rawmemchr... (cached) no
-checking for search.h... yes
-checking for tsearch... yes
-checking for sigprocmask... (cached) yes
-checking for ssize_t... (cached) yes
-checking whether stat handles trailing slashes on files... guessing yes
-checking for struct stat.st_atim.tv_nsec... yes
-checking whether struct stat.st_atim is of type struct timespec... yes
-checking for struct stat.st_birthtimespec.tv_nsec... no
-checking for struct stat.st_birthtimensec... no
-checking for struct stat.st_birthtim.tv_nsec... no
-checking for working stdalign.h... yes
-checking for variable-length arrays... yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating lib/Makefile
-config.status: creating srclib/Makefile
-config.status: creating src/Makefile
-config.status: creating po/Makefile.in
-config.status: creating man/Makefile
-config.status: creating tests/Makefile
-config.status: creating include/iconv.h
-config.status: creating include/iconv.h.inst
-config.status: creating config.h
-config.status: creating lib/config.h
-config.status: executing depfiles commands
-config.status: executing libtool commands
-config.status: executing po-directories commands
-config.status: creating po/POTFILES
-config.status: creating po/Makefile
-=== configuring in libcharset (/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/libiconv/libcharset)
-configure: running /bin/bash ./configure --disable-option-checking '--prefix=/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a'  '--host=aarch64-linux-android' 'ac_cv_header_pwd_h=no' 'ac_cv_header_langinfo_h=no' '--enable-static=true' '--enable-shared=false' 'host_alias=aarch64-linux-android' 'CC=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang' 'CFLAGS=-O0 -D__ARM_ARCH_8A__ -D__aarch64__ -march=armv8-a -mtune=cortex-a53 --sysroot=/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/include' 'LDFLAGS=-L/home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib -lm -lz' --cache-file=/dev/null --srcdir=.
-checking whether make sets $(MAKE)... yes
-checking for aarch64-linux-android-gcc... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... yes
-checking for suffix of object files... o
-checking whether the compiler supports GNU C... yes
-checking whether /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang accepts -g... yes
-checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang option to enable C11 features... none needed
-checking how to run the C preprocessor... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang -E
-checking for a BSD-compatible install... /usr/bin/install -c
-checking build system type... x86_64-pc-linux-gnu
-checking host system type... aarch64-unknown-linux-android
-checking for stdio.h... yes
-checking for stdlib.h... yes
-checking for string.h... yes
-checking for inttypes.h... yes
-checking for stdint.h... yes
-checking for strings.h... yes
-checking for sys/stat.h... yes
-checking for sys/types.h... yes
-checking for unistd.h... yes
-checking for wchar.h... yes
-checking for minix/config.h... no
-checking whether it is safe to define __EXTENSIONS__... yes
-checking whether _XOPEN_SOURCE should be defined... no
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/bin/sed
-checking for grep that handles long lines and -e... /usr/bin/grep
-checking for egrep... /usr/bin/grep -E
-checking for fgrep... /usr/bin/grep -F
-checking for ld used by /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
-checking if the linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
-checking for BSD- or MS-compatible name lister (nm)... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm
-checking the name lister (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 3145728
-checking how to convert x86_64-pc-linux-gnu file names to aarch64-unknown-linux-android format... func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld option to reload object files... -r
-checking for aarch64-linux-android-file... no
-checking for file... file
-configure: WARNING: using cross tools not prefixed with host triplet
-checking for aarch64-linux-android-objdump... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump
-checking how to recognize dependent libraries... pass_all
-checking for aarch64-linux-android-dlltool... no
-checking for dlltool... no
-checking how to associate runtime and link libraries... printf %s\n
-checking for aarch64-linux-android-ar... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
-checking for archiver @FILE support... @
-checking for aarch64-linux-android-strip... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip
-checking for aarch64-linux-android-ranlib... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
-checking for gawk... gawk
-checking command to parse /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm output from /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang object... ok
-checking for sysroot... no
-checking for a working dd... /usr/bin/dd
-checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
-checking for aarch64-linux-android-mt... no
-checking for mt... mt
-checking if mt is a manifest tool... no
-checking for dlfcn.h... yes
-checking for objdir... .libs
-checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -fno-rtti -fno-exceptions... yes
-checking for /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang option to produce PIC... -fPIC -DPIC
-checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang PIC flag -fPIC -DPIC works... yes
-checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang static flag -static works... yes
-checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -c -o file.o... yes
-checking if /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang supports -c -o file.o... (cached) yes
-checking whether the /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... Android linker
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... no
-checking whether to build static libraries... yes
-checking for ld... /usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld
-checking if the linker (/usr/local/lib/android/sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/bin/ld) is GNU ld... yes
-checking for shared library path variable... LD_LIBRARY_PATH
-checking whether to activate relocatable installation... no
-checking whether the -Werror option is usable... yes
-checking for simple visibility declarations... yes
-checking for nl_langinfo and CODESET... no
-checking for symlink... yes
-checking for working fcntl.h... cross-compiling
-checking for setlocale... yes
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating lib/Makefile
-config.status: creating include/libcharset.h
-config.status: creating include/libcharset.h.inst
-config.status: creating include/localcharset.h
-config.status: creating include/localcharset.h.inst
-config.status: creating config.h
-config.status: executing libtool commands
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/io/console'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json'
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json'
+installing default date_core libraries
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/monitor'
+compiling monitor.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/nkf'
+linking static-library aarch64-linux-android.a
+compiling nkf.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/io/wait'
+installing default monitor libraries
+installing default nkf libraries
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/objspace'
+compiling object_tracing.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/monitor'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/openssl'
+compiling openssl_missing.c
+compiling objspace.c
+compiling ossl.c
+compiling ossl_asn1.c
+compiling objspace_dump.c
+compiling ossl_bio.c
+linking static-library aarch64-linux-android.a
+installing default objspace libraries
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/objspace'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
+compiling pathname.c
+compiling ossl_bn.c
+installing default pathname libraries
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/psych'
+compiling ../.././ext/psych/yaml/api.c
+compiling ossl_cipher.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/nkf'
+compiling ossl_config.c
+compiling ../.././ext/psych/yaml/dumper.c
+compiling ../.././ext/psych/yaml/emitter.c
+compiling ../.././ext/psych/yaml/loader.c
+compiling ossl_digest.c
+compiling ../.././ext/psych/yaml/parser.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/date'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pty'
+compiling pty.c
+compiling ossl_engine.c
+compiling psych.c
+installing default pty libraries
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pty'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/racc/cparse'
+compiling cparse.c
+compiling ossl_hmac.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rbconfig/sizeof'
+sizes.c updated
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/racc/cparse'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/ripper'
+extracting ripper.y from ../.././parse.y
+limits.c updated
+compiling sizes.c
+compiling ossl_kdf.c
+compiling psych_emitter.c
+compiling limits.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rbconfig/sizeof'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rubyvm'
+compiling psych_parser.c
+installing default libraries
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rubyvm'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
+compiling ossl_ns_spki.c
+generating constant definitions
+generating eventids1.c from ../.././parse.y
+installing default socket libraries
+compiling init.c
+generating eventids2table.c from ../.././ext/ripper/eventids2.c
+compiling psych_to_ruby.c
+checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+compiling ossl_ocsp.c
+compiling psych_yaml_tree.c
+compiling compiler ripper.y
+compiling constants.c
+compiling ../.././ext/psych/yaml/reader.c
+compiling ../.././ext/psych/yaml/scanner.c
+compiling ossl_pkcs12.c
+compiling ossl_pkcs7.c
+installing default ripper libraries
+compiling ripper.c
+compiling ossl_pkey.c
+compiling ../.././ext/psych/yaml/writer.c
+compiling basicsocket.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/psych'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/stringio'
+compiling stringio.c
+compiling socket.c
+compiling ossl_pkey_dh.c
+compiling ossl_pkey_dsa.c
+linking static-library aarch64-linux-android.a
+compiling ipsocket.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/stringio'
+compiling tcpsocket.c
+compiling tcpserver.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/strscan'
+compiling strscan.c
+compiling sockssocket.c
+compiling ossl_pkey_ec.c
+compiling udpsocket.c
+compiling unixsocket.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/strscan'
+compiling ossl_pkey_rsa.c
+compiling unixserver.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/syslog'
+compiling syslog.c
+compiling option.c
+compiling ossl_rand.c
+linking static-library aarch64-linux-android.a
+installing default syslog libraries
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/syslog'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/zlib'
+compiling zlib.c
+compiling ossl_ssl.c
+compiling ancdata.c
+compiling raddrinfo.c
+compiling ossl_ssl_session.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/zlib'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+compiling ossl_ts.c
+./revision.h unchanged
+/usr/bin/mkdir -p ext
+ext/extinit.c updated
+compiling ext/extinit.o
+compiling ifaddr.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+linking static-library aarch64-linux-android.a
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make[3]: Nothing to be done for 'libencs'.
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/bubblebabble'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/md5'
+compiling bubblebabble.c
+compiling md5init.c
+compiling md5.c
+linking static-library aarch64-linux-android.a
+compiling ossl_x509.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/bubblebabble'
+compiling ossl_x509attr.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/md5'
+compiling ossl_x509cert.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/rmd160'
+compiling rmd160init.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha1'
+compiling rmd160.c
+compiling sha1init.c
+compiling sha1.c
+compiling ossl_x509crl.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/rmd160'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
+compiling sha2init.c
+compiling sha2.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha1'
+compiling ossl_x509ext.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
+compiling generator.c
+linking static-library aarch64-linux-android.a
+installing default sha2 libraries
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
+compiling ossl_x509name.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/parser'
+compiling parser.c
+compiling ossl_x509req.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/parser'
+compiling ossl_x509revoked.c
+linking static-library aarch64-linux-android.a
+compiling ossl_x509store.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
+installing default openssl libraries
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/openssl'
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/ripper'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make[3]: *** No rule to make target 'ext/bigdecimal/bigdecimal.a', needed by 'libruby.so.3.1.0'.  Stop.
+make[3]: *** Waiting for unfinished jobs....
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make[2]: *** [exts.mk:148: ruby] Error 2
+make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make[1]: *** [uncommon.mk:305: build-ext] Error 2
+make[1]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
 
 ===== setup.log tail 60 =====
 Loading package information...                                                  Loading local repository...                                                     [                                       ] 3% Loading local repository...        [                                       ] 3% Fetch remote repository...         [=                                      ] 3% Fetch remote repository...         [=                                      ] 4% Fetch remote repository...         [=                                      ] 5% Fetch remote repository...         [==                                     ] 5% Fetch remote repository...         [==                                     ] 6% Fetch remote repository...         [==                                     ] 7% Fetch remote repository...         [==                                     ] 7% Computing updates...               [===                                    ] 8% Computing updates...               [===                                    ] 10% Computing updates...              [===                                    ] 10% Installing NDK (Side by side) 23.2[===                                    ] 10% Downloading android-ndk-r23c-linux[====                                   ] 10% Downloading android-ndk-r23c-linux[====                                   ] 11% Downloading android-ndk-r23c-linux[====                                   ] 12% Downloading android-ndk-r23c-linux[=====                                  ] 13% Downloading android-ndk-r23c-linux[=====                                  ] 14% Downloading android-ndk-r23c-linux[=====                                  ] 15% Downloading android-ndk-r23c-linux[======                                 ] 15% Downloading android-ndk-r23c-linux[======                                 ] 16% Downloading android-ndk-r23c-linux[======                                 ] 16% Unzipping...                      [======                                 ] 16% Unzipping... android-ndk-r23c/    [======                                 ] 16% Unzipping... android-ndk-r23c/CHAN[======                                 ] 16% Unzipping... android-ndk-r23c/wrap[======                                 ] 16% Unzipping... android-ndk-r23c/preb[======                                 ] 16% Unzipping... android-ndk-r23c/buil[======                                 ] 16% Unzipping... android-ndk-r23c/NOTI[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/NOTI[======                                 ] 16% Unzipping... android-ndk-r23c/meta[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/pyth[======                                 ] 16% Unzipping... android-ndk-r23c/sour[======                                 ] 16% Unzipping... android-ndk-r23c/simp[======                                 ] 16% Unzipping... android-ndk-r23c/ndk-[======                                 ] 16% Unzipping... android-ndk-r23c/READ[======                                 ] 16% Unzipping... android-ndk-r23c/tool[======                                 ] 17% Unzipping... android-ndk-r23c/tool[=======                                ] 18% Unzipping... android-ndk-r23c/tool[=======                                ] 19% Unzipping... android-ndk-r23c/tool[=======                                ] 20% Unzipping... android-ndk-r23c/tool[========                               ] 20% Unzipping... android-ndk-r23c/tool[========                               ] 21% Unzipping... android-ndk-r23c/tool[========                               ] 21% Unzipping... android-ndk-r23c/ndk-[========                               ] 21% Unzipping... android-ndk-r23c/shad[============                           ] 33% Unzipping... android-ndk-r23c/shad[============                           ] 33% Installing CMake 3.22.1 android-nd[============                           ] 33% Downloading cmake-3.22.1-linux.zip[=============                          ] 33% Downloading cmake-3.22.1-linux.zip[=============                          ] 34% Downloading cmake-3.22.1-linux.zip[=============                          ] 35% Downloading cmake-3.22.1-linux.zip[==============                         ] 35% Downloading cmake-3.22.1-linux.zip[==============                         ] 36% Downloading cmake-3.22.1-linux.zip[==============                         ] 37% Downloading cmake-3.22.1-linux.zip[===============                        ] 38% Downloading cmake-3.22.1-linux.zip[===============                        ] 38% Unzipping... android-ndk-r23c/shad[===============                        ] 38% Unzipping... bin/cmake            [===============                        ] 39% Unzipping... bin/cmake            [===============                        ] 40% Unzipping... bin/cmake            [===============                        ] 40% Unzipping... bin/ctest            [================                       ] 40% Unzipping... bin/ctest            [================                       ] 41% Unzipping... bin/ctest            [================                       ] 41% Unzipping... bin/cpack            [================                       ] 42% Unzipping... bin/cpack            [=================                      ] 43% Unzipping... bin/cpack            [=================                      ] 43% Unzipping... share/vim/vimfiles/in[=================                      ] 43% Unzipping... share/vim/vimfiles/sy[=================                      ] 43% Unzipping... share/aclocal/cmake.m[=================                      ] 43% Unzipping... share/emacs/site-lisp[=================                      ] 43% Unzipping... share/cmake-3.22/incl[=================                      ] 43% Unzipping... share/cmake-3.22/Help[=================                      ] 43% Unzipping... share/cmake-3.22/Temp[=================                      ] 43% Unzipping... share/cmake-3.22/Modu[=================                      ] 44% Unzipping... share/cmake-3.22/Modu[=================                      ] 44% Unzipping... share/bash-completion[=================                      ] 44% Unzipping... doc/cmake-3.22/Copyri[=================                      ] 44% Unzipping... doc/cmake-3.22/cmzlib[=================                      ] 44% Unzipping... doc/cmake-3.22/cmzstd[=================                      ] 44% Unzipping... doc/cmake-3.22/cmnght[=================                      ] 44% Unzipping... doc/cmake-3.22/cmsys/[=================                      ] 44% Unzipping... doc/cmake-3.22/cmcurl[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibr[=================                      ] 44% Unzipping... doc/cmake-3.22/cmliba[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibl[=================                      ] 44% Unzipping... doc/cmake-3.22/cmlibu[=================                      ] 44% Unzipping... doc/openssl-1.1.1l/LI[=================                      ] 44% Unzipping... source.properties    [=================                      ] 44% Unzipping... bin/ninja            [=================                      ] 44% Unzipping... doc/ninja/LICENSE    [=================                      ] 44% Unzipping... share/cmake-3.22/Modu[=====================                  ] 55% Unzipping... share/cmake-3.22/Modu[=====================                  ] 55% Installing Android SDK Build-Tools[=====================                  ] 55% Downloading build-tools_r33.0.2-li[======================                 ] 55% Downloading build-tools_r33.0.2-li[======================                 ] 56% Downloading build-tools_r33.0.2-li[======================                 ] 57% Downloading build-tools_r33.0.2-li[=======================                ] 58% Downloading build-tools_r33.0.2-li[=======================                ] 59% Downloading build-tools_r33.0.2-li[=======================                ] 60% Downloading build-tools_r33.0.2-li[========================               ] 60% Downloading build-tools_r33.0.2-li[========================               ] 61% Downloading build-tools_r33.0.2-li[========================               ] 61% Unzipping... share/cmake-3.22/Modu[========================               ] 61% Unzipping... android-13/NOTICE.txt[========================               ] 61% Unzipping... android-13/aapt      [========================               ] 61% Unzipping... android-13/aapt2     [========================               ] 61% Unzipping... android-13/aarch64-li[========================               ] 61% Unzipping... android-13/aidl      [========================               ] 61% Unzipping... android-13/apksigner [========================               ] 61% Unzipping... android-13/arm-linux-[========================               ] 61% Unzipping... android-13/bcc_compat[========================               ] 61% Unzipping... android-13/core-lambd[========================               ] 61% Unzipping... android-13/d8        [========================               ] 61% Unzipping... android-13/dexdump   [========================               ] 61% Unzipping... android-13/i686-linux[========================               ] 61% Unzipping... android-13/lld       [========================               ] 61% Unzipping... android-13/llvm-rs-cc[========================               ] 61% Unzipping... android-13/mipsel-lin[========================               ] 61% Unzipping... android-13/runtime.pr[========================               ] 61% Unzipping... android-13/source.pro[========================               ] 61% Unzipping... android-13/split-sele[========================               ] 61% Unzipping... android-13/x86_64-lin[========================               ] 61% Unzipping... android-13/zipalign  [========================               ] 61% Unzipping... android-13/lib/apksig[========================               ] 61% Unzipping... android-13/lib/d8.jar[========================               ] 62% Unzipping... android-13/lib/d8.jar[========================               ] 62% Unzipping... android-13/lib64/libL[=========================              ] 63% Unzipping... android-13/lib64/libL[=========================              ] 63% Unzipping... android-13/lib64/libb[=========================              ] 63% Unzipping... android-13/lib64/libc[=========================              ] 64% Unzipping... android-13/lib64/libc[=========================              ] 64% Unzipping... android-13/lld-bin/ll[=========================              ] 65% Unzipping... android-13/lld-bin/ll[==========================             ] 65% Unzipping... android-13/lld-bin/ll[==========================             ] 65% Unzipping... android-13/renderscri[==========================             ] 66% Unzipping... android-13/renderscri[==============================         ] 78% Unzipping... android-13/renderscri[==============================         ] 78% Installing Android SDK Platform 33[==============================         ] 78% Downloading platform-33-ext3_r03.z[===============================        ] 78% Downloading platform-33-ext3_r03.z[===============================        ] 79% Downloading platform-33-ext3_r03.z[===============================        ] 80% Downloading platform-33-ext3_r03.z[================================       ] 80% Downloading platform-33-ext3_r03.z[================================       ] 81% Downloading platform-33-ext3_r03.z[================================       ] 82% Downloading platform-33-ext3_r03.z[=================================      ] 83% Downloading platform-33-ext3_r03.z[=================================      ] 83% Unzipping... android-13/renderscri[=================================      ] 83% Unzipping... android-13/          [=================================      ] 83% Unzipping... android-13/android.ja[=================================      ] 84% Unzipping... android-13/android.ja[=================================      ] 85% Unzipping... android-13/android.ja[==================================     ] 85% Unzipping... android-13/android.ja[==================================     ] 85% Unzipping... android-13/optional/ [==================================     ] 85% Unzipping... android-13/optional/a[==================================     ] 85% Unzipping... android-13/optional/l[==================================     ] 85% Unzipping... android-13/optional/o[==================================     ] 85% Unzipping... android-13/optional/a[==================================     ] 85% Unzipping... android-13/optional/o[==================================     ] 85% Unzipping... android-13/templates/[==================================     ] 85% Unzipping... android-13/core-for-s[==================================     ] 85% Unzipping... android-13/build.prop[==================================     ] 85% Unzipping... android-13/android-st[==================================     ] 86% Unzipping... android-13/android-st[==================================     ] 86% Unzipping... android-13/uiautomato[==================================     ] 86% Unzipping... android-13/source.pro[==================================     ] 86% Unzipping... android-13/data/     [==================================     ] 86% Unzipping... android-13/data/servi[==================================     ] 86% Unzipping... android-13/data/NOTIC[==================================     ] 86% Unzipping... android-13/data/widge[==================================     ] 86% Unzipping... android-13/data/broad[==================================     ] 86% Unzipping... android-13/data/api-v[==================================     ] 86% Unzipping... android-13/data/featu[==================================     ] 86% Unzipping... android-13/data/annot[==================================     ] 86% Unzipping... android-13/data/res/ [==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/m[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/a[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/a[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/c[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/t[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/x[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/l[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/r[==================================     ] 86% Unzipping... android-13/data/res/v[==================================     ] 86% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/c[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/x[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/c[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/r[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/i[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/m[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[==================================     ] 87% Unzipping... android-13/data/res/v[==================================     ] 87% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/x[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/a[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/x[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/a[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/i[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/c[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/m[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/l[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/r[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/res/d[===================================    ] 88% Unzipping... android-13/data/res/v[===================================    ] 88% Unzipping... android-13/data/categ[===================================    ] 88% Unzipping... android-13/data/activ[===================================    ] 88% Unzipping... android-13/sdk.proper[===================================    ] 88% Unzipping... android-13/skins/    [===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/skins/WQVG[===================================    ] 88% Unzipping... android-13/skins/NOTI[===================================    ] 88% Unzipping... android-13/skins/HVGA[===================================    ] 88% Unzipping... android-13/skins/WVGA[===================================    ] 88% Unzipping... android-13/skins/WQVG[===================================    ] 88% Unzipping... android-13/skins/WVGA[===================================    ] 88% Unzipping... android-13/skins/QVGA[===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/skins/WSVG[===================================    ] 88% Unzipping... android-13/skins/WXGA[===================================    ] 88% Unzipping... android-13/framework.[===================================    ] 89% Unzipping... android-13/framework.[=======================================] 100% Unzipping... android-13/framework
