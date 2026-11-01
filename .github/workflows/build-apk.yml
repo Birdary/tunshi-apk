@@ -1,4 +1,4 @@
-name: Build Tunshi APK
+﻿name: Build Tunshi APK
 
 on:
   workflow_dispatch:
@@ -66,7 +66,7 @@ jobs:
             grep -n -iE "error:|Error [0-9]|No space left|Killed|undefined reference|\*\*\*" build.log 2>/dev/null | tail -n 50 || echo "(none)"
             echo
             echo "===== build.log last 60 lines ====="
-            tail -n 60 build.log 2>/dev/null || echo "(no build.log)"
+            tail -n 260 build.log 2>/dev/null || echo "(no build.log)"
             echo
             echo "===== setup.log last 30 lines ====="
             tail -n 30 setup.log 2>/dev/null || echo "(no setup.log)"
@@ -85,3 +85,4 @@ jobs:
           name: tunshi-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
