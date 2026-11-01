@@ -10,60 +10,61 @@ build=failure
 22:make: [Makefile:224: clean-openssl] Error 1 (ignored)
 25:make[1]: *** No rule to make target 'clean'.  Stop.
 29:make: [Makefile:227: clean-ruby] Error 1 (ignored)
-440:**********************************************************************
-441:***                                                                ***
-442:***   OpenSSL has been successfully configured                     ***
-443:***                                                                ***
-444:***   If you encounter a problem while building, please open an    ***
-445:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
-446:***   and include the output from the following command:           ***
-447:***                                                                ***
-448:***       perl configdata.pm --dump                                ***
-449:***                                                                ***
-450:***   (If you are new to OpenSSL, you might want to consult the    ***
-451:***   'Troubleshooting' section in the INSTALL file first)         ***
-452:***                                                                ***
-453:**********************************************************************
-5826:checking for fdatasync... *** Installing runtime libraries
-5827:*** Installing development files
-5833:*** Installing engines
-5835:*** Installing runtime programs
-7245:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
-7246:make[3]: *** Waiting for unfinished jobs....
-7248:make[2]: *** [exts.mk:139: ruby] Error 2
-7250:make[1]: *** [uncommon.mk:305: build-ext] Error 2
-7329:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
-7331:make[2]: *** [exts.mk:139: ruby] Error 2
-7333:make[1]: *** [uncommon.mk:305: build-ext] Error 2
-7335:make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
+1102:**********************************************************************
+1103:***                                                                ***
+1104:***   OpenSSL has been successfully configured                     ***
+1105:***                                                                ***
+1106:***   If you encounter a problem while building, please open an    ***
+1107:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+1108:***   and include the output from the following command:           ***
+1109:***                                                                ***
+1110:***       perl configdata.pm --dump                                ***
+1111:***                                                                ***
+1112:***   (If you are new to OpenSSL, you might want to consult the    ***
+1113:***   'Troubleshooting' section in the INSTALL file first)         ***
+1114:***                                                                ***
+1115:**********************************************************************
+5835:*** Installing runtime libraries
+5836:*** Installing development files
+5839:*** Installing runtime programs
+5840:*** Installing engines
+7230:make[3]: *** No rule to make target 'ext/digest/digest.a', needed by 'libruby.so.3.1.0'.  Stop.
+7231:make[3]: *** Waiting for unfinished jobs....
+7233:make[2]: *** [exts.mk:134: ruby] Error 2
+7235:make[1]: *** [uncommon.mk:305: build-ext] Error 2
+7312:make[3]: *** No rule to make target 'ext/digest/digest.a', needed by 'libruby.so.3.1.0'.  Stop.
+7314:make[2]: *** [exts.mk:134: ruby] Error 2
+7316:make[1]: *** [uncommon.mk:305: build-ext] Error 2
+7318:make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
 
 ===== build.log last 60 lines =====
-linking static-library aarch64-linux-android.a
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/io/console'
-linking static-library aarch64-linux-android.a
-compiling objspace.c
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/monitor'
-compiling objspace_dump.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/objspace'
+compiling object_tracing.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/openssl'
 compiling openssl_missing.c
-compiling ossl.c
-compiling ossl_asn1.c
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
 linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/io/console'
+compiling ossl.c
+compiling objspace.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
 compiling pathname.c
-installing default objspace libraries
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/objspace'
+compiling ossl_asn1.c
+compiling objspace_dump.c
+installing default pathname libraries
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/psych'
 compiling ../.././ext/psych/yaml/api.c
 compiling ossl_bio.c
 compiling ../.././ext/psych/yaml/dumper.c
-installing default pathname libraries
 linking static-library aarch64-linux-android.a
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pathname'
+installing default objspace libraries
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/objspace'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pty'
 compiling pty.c
-compiling ../.././ext/psych/yaml/emitter.c
 compiling ossl_bn.c
+compiling ../.././ext/psych/yaml/emitter.c
 installing default pty libraries
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/pty'
@@ -71,146 +72,147 @@ make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.na
 compiling cparse.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/racc/cparse'
-compiling ../.././ext/psych/yaml/loader.c
-compiling ossl_cipher.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rbconfig/sizeof'
 sizes.c updated
+compiling ossl_cipher.c
 limits.c updated
 compiling sizes.c
-linking static-library aarch64-linux-android.a
-compiling ../.././ext/psych/yaml/parser.c
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/nkf'
-compiling ossl_config.c
 compiling limits.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rbconfig/sizeof'
+compiling ../.././ext/psych/yaml/loader.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/nkf'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/ripper'
 extracting ripper.y from ../.././parse.y
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rubyvm'
 installing default libraries
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/rubyvm'
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
+generating constant definitions
+compiling ossl_config.c
+compiling ../.././ext/psych/yaml/parser.c
+installing default socket libraries
+compiling init.c
 generating eventids1.c from ../.././parse.y
+compiling constants.c
 generating eventids2table.c from ../.././ext/ripper/eventids2.c
 compiling psych.c
 compiling ossl_digest.c
-compiling ossl_engine.c
-compiling psych_emitter.c
 checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+compiling psych_emitter.c
 compiling compiler ripper.y
+compiling ossl_engine.c
 compiling psych_parser.c
 compiling psych_to_ruby.c
-compiling ossl_hmac.c
-compiling ossl_kdf.c
 compiling psych_yaml_tree.c
+compiling ossl_hmac.c
 compiling ../.././ext/psych/yaml/reader.c
-installing default ripper libraries
 compiling ../.././ext/psych/yaml/scanner.c
+compiling ossl_kdf.c
+compiling basicsocket.c
 compiling ossl_ns_spki.c
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
-generating constant definitions
-installing default socket libraries
-compiling init.c
-compiling ossl_ocsp.c
-compiling constants.c
-compiling ossl_pkcs12.c
+installing default ripper libraries
 compiling ripper.c
+compiling socket.c
+compiling ossl_ocsp.c
+compiling ipsocket.c
+compiling tcpsocket.c
+compiling ossl_pkcs12.c
 compiling ../.././ext/psych/yaml/writer.c
-compiling ossl_pkcs7.c
+compiling tcpserver.c
+compiling sockssocket.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/psych'
+compiling udpsocket.c
+compiling ossl_pkcs7.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/syslog'
 compiling syslog.c
-compiling ossl_pkey.c
+compiling unixsocket.c
 linking static-library aarch64-linux-android.a
 installing default syslog libraries
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/syslog'
-compiling basicsocket.c
-compiling socket.c
-compiling ossl_pkey_dh.c
-compiling ossl_pkey_dsa.c
-compiling ipsocket.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/zlib'
 compiling zlib.c
-compiling tcpsocket.c
-compiling ossl_pkey_ec.c
-compiling tcpserver.c
-compiling sockssocket.c
-compiling udpsocket.c
-compiling unixsocket.c
-compiling ossl_pkey_rsa.c
 compiling unixserver.c
 compiling option.c
-compiling ossl_rand.c
+compiling ossl_pkey.c
+compiling ancdata.c
+compiling ossl_pkey_dh.c
+compiling raddrinfo.c
+compiling ossl_pkey_dsa.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/zlib'
+compiling ossl_pkey_ec.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-compiling ancdata.c
-compiling ossl_ssl.c
 ./revision.h unchanged
 /usr/bin/mkdir -p ext
 ext/extinit.c updated
 compiling ext/extinit.o
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-compiling ossl_ssl_session.c
-compiling raddrinfo.c
 compiling ifaddr.c
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+compiling ossl_pkey_rsa.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
+compiling ossl_rand.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[3]: Nothing to be done for 'libencs'.
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+compiling ossl_ssl.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/bubblebabble'
 compiling bubblebabble.c
-compiling ossl_ts.c
+compiling ossl_ssl_session.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/bubblebabble'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/md5'
 compiling md5init.c
 compiling md5.c
 linking static-library aarch64-linux-android.a
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/socket'
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/md5'
+compiling ossl_ts.c
+compiling ossl_x509.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/rmd160'
 compiling rmd160init.c
-linking static-library aarch64-linux-android.a
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/md5'
 compiling rmd160.c
-compiling ossl_x509.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha1'
+compiling sha1init.c
+compiling sha1.c
 compiling ossl_x509attr.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/rmd160'
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha1'
-compiling sha1init.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
 compiling sha2init.c
-compiling sha1.c
 compiling sha2.c
-compiling ossl_x509cert.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha1'
-compiling ossl_x509crl.c
+make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
+compiling generator.c
+compiling ossl_x509cert.c
 linking static-library aarch64-linux-android.a
 installing default sha2 libraries
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
-compiling generator.c
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/parser'
 compiling parser.c
+compiling ossl_x509crl.c
+linking static-library aarch64-linux-android.a
+make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
 compiling ossl_x509ext.c
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/parser'
 compiling ossl_x509name.c
 compiling ossl_x509req.c
-linking static-library aarch64-linux-android.a
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/json/generator'
 compiling ossl_x509revoked.c
 compiling ossl_x509store.c
+installing default openssl libraries
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/openssl'
 linking static-library aarch64-linux-android.a
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/ripper'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
+make[3]: *** No rule to make target 'ext/digest/digest.a', needed by 'libruby.so.3.1.0'.  Stop.
 make[3]: *** Waiting for unfinished jobs....
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-make[2]: *** [exts.mk:139: ruby] Error 2
+make[2]: *** [exts.mk:134: ruby] Error 2
 make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[1]: *** [uncommon.mk:305: build-ext] Error 2
 make[1]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
@@ -248,8 +250,6 @@ make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.nat
 generating makefile exts.mk
 exts.mk updated
 make[2]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/coverage'
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/coverage'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest'
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
@@ -291,9 +291,9 @@ make[3]: Nothing to be done for 'libencs'.
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 ./revision.h unchanged
-make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
+make[3]: *** No rule to make target 'ext/digest/digest.a', needed by 'libruby.so.3.1.0'.  Stop.
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-make[2]: *** [exts.mk:139: ruby] Error 2
+make[2]: *** [exts.mk:134: ruby] Error 2
 make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[1]: *** [uncommon.mk:305: build-ext] Error 2
 make[1]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
