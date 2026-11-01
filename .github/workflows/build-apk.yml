@@ -14,11 +14,15 @@ jobs:
         with:
           lfs: true
 
+      # 从 Windows 提交时可能丢失可执行位，这里统一补上
+      - name: Fix permissions
+        run: chmod +x gradlew tools/*.sh app/jni/*.sh app/jni/mkxp-z/*.sh || true
+
       - name: Install build environment
-        run: ./tools/setup.sh
+        run: bash tools/setup.sh
 
       - name: Build APK (arm64-v8a, strip audio)
-        run: ./tools/build.sh ./game --strip-audio
+        run: bash tools/build.sh ./game --strip-audio
 
       - name: Collect APK
         run: |
