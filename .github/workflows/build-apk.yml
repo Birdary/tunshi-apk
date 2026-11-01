@@ -1,0 +1,33 @@
+name: Build Tunshi APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install build environment
+        run: ./tools/setup.sh
+
+      - name: Build APK (arm64-v8a, strip audio)
+        run: ./tools/build.sh ./game --strip-audio
+
+      - name: Collect APK
+        run: |
+          mkdir -p out
+          cp app/build/outputs/apk/debug/*.apk out/ || true
+          ls -la out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tunshi-apk
+          path: out/*.apk
+          if-no-files-found: error
