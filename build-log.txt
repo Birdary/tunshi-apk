@@ -10,46 +10,46 @@ build=failure
 22:make: [Makefile:224: clean-openssl] Error 1 (ignored)
 25:make[1]: *** No rule to make target 'clean'.  Stop.
 29:make: [Makefile:227: clean-ruby] Error 1 (ignored)
-634:**********************************************************************
-635:***                                                                ***
-636:***   OpenSSL has been successfully configured                     ***
-637:***                                                                ***
-638:***   If you encounter a problem while building, please open an    ***
-639:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
-640:***   and include the output from the following command:           ***
-641:***                                                                ***
-642:***       perl configdata.pm --dump                                ***
-643:***                                                                ***
-644:***   (If you are new to OpenSSL, you might want to consult the    ***
-645:***   'Troubleshooting' section in the INSTALL file first)         ***
-646:***                                                                ***
-647:**********************************************************************
-5768:*** Installing runtime libraries
-5770:*** Installing development files
-5797:*** Installing engines
-5799:*** Installing runtime programs
-7321:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
-7322:make[3]: *** Waiting for unfinished jobs....
-7324:make[2]: *** [exts.mk:146: ruby] Error 2
-7326:make[1]: *** [uncommon.mk:305: build-ext] Error 2
-7407:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
-7409:make[2]: *** [exts.mk:146: ruby] Error 2
-7411:make[1]: *** [uncommon.mk:305: build-ext] Error 2
-7413:make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
+208:**********************************************************************
+209:***                                                                ***
+210:***   OpenSSL has been successfully configured                     ***
+211:***                                                                ***
+212:***   If you encounter a problem while building, please open an    ***
+213:***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+214:***   and include the output from the following command:           ***
+215:***                                                                ***
+216:***       perl configdata.pm --dump                                ***
+217:***                                                                ***
+218:***   (If you are new to OpenSSL, you might want to consult the    ***
+219:***   'Troubleshooting' section in the INSTALL file first)         ***
+220:***                                                                ***
+221:**********************************************************************
+5227:*** Installing runtime libraries
+5228:*** Installing development files
+5254:*** Installing engines
+5255:*** Installing runtime programs
+7300:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
+7301:make[3]: *** Waiting for unfinished jobs....
+7303:make[2]: *** [exts.mk:139: ruby] Error 2
+7305:make[1]: *** [uncommon.mk:305: build-ext] Error 2
+7385:make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
+7387:make[2]: *** [exts.mk:139: ruby] Error 2
+7389:make[1]: *** [uncommon.mk:305: build-ext] Error 2
+7391:make: *** [Makefile:201: /home/runner/work/tunshi-apk/tunshi-apk/app/jni/build-arm64-v8a/lib/libruby.so.3.1.0] Error 2
 
 ===== build.log last 60 lines =====
+generating transdb.h
 transdb.h unchanged
 generating makefiles ext/configure-ext.mk
 ext/configure-ext.mk updated
 make[2]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
+==> Native build for arm64-v8a still running (90 seconds elapsed)...
 make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 generating makefile exts.mk
 exts.mk updated
 make[2]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/coverage'
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/coverage'
-make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/date'
-make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/date'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest'
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest'
 make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby/ext/digest/sha2'
@@ -93,7 +93,7 @@ make[3]: Entering directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.na
 ./revision.h unchanged
 make[3]: *** No rule to make target 'ext/cgi/escape/escape.a', needed by 'libruby.so.3.1.0'.  Stop.
 make[3]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
-make[2]: *** [exts.mk:146: ruby] Error 2
+make[2]: *** [exts.mk:139: ruby] Error 2
 make[2]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
 make[1]: *** [uncommon.mk:305: build-ext] Error 2
 make[1]: Leaving directory '/home/runner/work/tunshi-apk/tunshi-apk/app/jni/.native-work/arm64-v8a/ruby'
