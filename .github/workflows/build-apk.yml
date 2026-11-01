@@ -1,4 +1,4 @@
-﻿name: Build Tunshi APK
+name: Build Tunshi APK
 
 on:
   workflow_dispatch:
@@ -11,17 +11,24 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
 
       - name: Fix permissions
         run: chmod +x gradlew tools/*.sh app/jni/*.sh app/jni/mkxp-z/*.sh || true
 
+      - name: Cache Android SDK
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/Android/Sdk
+            ~/.cache/android
+          key: android-sdk-23.2.8568313-v1
+
       - name: Env info
         run: |
           echo "cpu: $(nproc)"; free -m | head -2; df -h / | tail -1
-          lsb_release -a || cat /etc/os-release
 
       - name: Install build environment
         id: setup
@@ -44,10 +51,18 @@ jobs:
           {
             echo "setup=${{ steps.setup.outcome }}"
             echo "build=${{ steps.build.outcome }}"
-            echo "----- setup.log (tail) -----"
-            tail -n 400 setup.log 2>/dev/null || echo "(no setup.log)"
-            echo "----- build.log (tail) -----"
-            tail -n 400 build.log 2>/dev/null || echo "(no build.log)"
+            echo
+            echo "===== errors (setup) ====="
+            grep -n -iE "error|fatal|cannot|No such file|undefined reference|Failed" setup.log 2>/dev/null | tail -n 40 || echo "(none)"
+            echo
+            echo "===== errors (build) ====="
+            grep -n -iE "error|fatal|cannot|No such file|undefined reference|Failed|\*\*\*" build.log 2>/dev/null | tail -n 60 || echo "(none)"
+            echo
+            echo "===== build.log tail 200 ====="
+            tail -n 200 build.log 2>/dev/null || echo "(no build.log)"
+            echo
+            echo "===== setup.log tail 60 ====="
+            tail -n 60 setup.log 2>/dev/null || echo "(no setup.log)"
           } > build-log.txt
           git config user.name "ci"
           git config user.email "ci@local"
@@ -63,4 +78,3 @@ jobs:
           name: tunshi-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-
