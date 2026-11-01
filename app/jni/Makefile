@@ -198,7 +198,7 @@ openssl/Makefile: openssl/Configure
 ruby: init openssl $(LIBDIR)/libruby.so.3.1.0
 
 $(LIBDIR)/libruby.so.3.1.0: ruby/Makefile
-	cd ruby && ( $(MAKE) -j$(NPROC) || $(MAKE) -j1 ) && $(MAKE) install
+	cd ruby && $(MAKE) -j1 && $(MAKE) install
 
 ruby/Makefile: ruby/configure
 	cd ruby; DLDFLAGS="-Wl,-soname,libruby.so" \
@@ -229,5 +229,6 @@ clean-ruby:
 clean: clean-pixman clean-iconv clean-openal clean-openssl clean-ruby
 
 all: pixman iconv openal openssl ruby
+
 
 
